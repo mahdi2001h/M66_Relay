@@ -1,0 +1,92 @@
+custom/main.c:1:0: warning: "__CUSTOMER_CODE__" redefined [enabled by default]
+<command-line>:0:0: note: this is the location of the previous definition
+custom/main.c: In function 'SMS_Initialize':
+custom/main.c:192:9: warning: unused variable 'nTotal' [-Wunused-variable]
+custom/main.c:191:9: warning: unused variable 'nUsed' [-Wunused-variable]
+custom/main.c:190:8: warning: unused variable 'nCurrStorage' [-Wunused-variable]
+custom/main.c: In function 'SMS_TextMode_Send':
+custom/main.c:219:5: warning: pointer targets in passing argument 4 of 'RIL_SMS_SendSMS_Text' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:5:0:
+ril/inc/ril_sms.h:316:12: note: expected 'u8 *' but argument is of type 'char *'
+custom/main.c: In function 'Hdlr_RecvNewSMS':
+custom/main.c:309:9: warning: pointer targets in passing argument 1 of 'Ql_strcmp' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:8:0:
+include/ql_stdlib.h:50:7: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:322:17: warning: pointer targets in passing argument 2 of 'Ql_FS_Write' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:15:0:
+include/ql_fs.h:223:5: note: expected 'u8 *' but argument is of type 'char *'
+custom/main.c:322:17: warning: pointer targets in passing argument 4 of 'Ql_FS_Write' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:15:0:
+include/ql_fs.h:223:5: note: expected 'u32 *' but argument is of type 's32 *'
+custom/main.c:341:13: warning: pointer targets in passing argument 1 of 'Ql_strncmp' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:8:0:
+include/ql_stdlib.h:51:7: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:345:21: warning: pointer targets in passing argument 1 of 'Ql_strlen' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:8:0:
+include/ql_stdlib.h:53:7: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:351:29: warning: pointer targets in passing argument 4 of 'Ql_FS_Read' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:15:0:
+include/ql_fs.h:187:5: note: expected 'u32 *' but argument is of type 's32 *'
+custom/main.c:356:33: warning: pointer targets in passing argument 2 of 'Ql_strcpy' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:8:0:
+include/ql_stdlib.h:46:7: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:358:33: warning: pointer targets in passing argument 1 of 'Ql_strlen' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:8:0:
+include/ql_stdlib.h:53:7: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:358:33: warning: pointer targets in passing argument 4 of 'Ql_FS_Write' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:15:0:
+include/ql_fs.h:223:5: note: expected 'u32 *' but argument is of type 's32 *'
+custom/main.c:383:13: warning: pointer targets in passing argument 1 of 'Ql_strcmp' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:8:0:
+include/ql_stdlib.h:50:7: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:392:13: warning: pointer targets in passing argument 1 of 'Ql_strncmp' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:8:0:
+include/ql_stdlib.h:51:7: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:421:21: warning: implicit declaration of function 'update_IO' [-Wimplicit-function-declaration]
+custom/main.c:425:13: warning: pointer targets in passing argument 1 of 'Ql_strncmp' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:8:0:
+include/ql_stdlib.h:51:7: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:433:25: warning: implicit declaration of function 'pcf8574_setoutputpin' [-Wimplicit-function-declaration]
+custom/main.c:469:13: warning: pointer targets in passing argument 1 of 'Ql_strncmp' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:8:0:
+include/ql_stdlib.h:51:7: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:270:10: warning: unused variable 'bResult' [-Wunused-variable]
+custom/main.c: In function 'CallBack_UART_Hdlr':
+custom/main.c:591:15: warning: unused variable 'p' [-Wunused-variable]
+custom/main.c:587:5: warning: enumeration value 'EVENT_UART_READY_TO_WRITE' not handled in switch [-Wswitch]
+custom/main.c:587:5: warning: enumeration value 'EVENT_UART_FE_IND' not handled in switch [-Wswitch]
+custom/main.c:587:5: warning: enumeration value 'EVENT_UART_RI_IND' not handled in switch [-Wswitch]
+custom/main.c:587:5: warning: enumeration value 'EVENT_UART_DCD_IND' not handled in switch [-Wswitch]
+custom/main.c:587:5: warning: enumeration value 'EVENT_UART_DTR_IND' not handled in switch [-Wswitch]
+custom/main.c: At top level:
+custom/main.c:656:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+custom/main.c: In function 'check_file':
+custom/main.c:663:9: warning: pointer targets in passing argument 4 of 'Ql_FS_Read' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:15:0:
+include/ql_fs.h:187:5: note: expected 'u32 *' but argument is of type 's32 *'
+custom/main.c:665:9: warning: pointer targets in passing argument 2 of 'Ql_strncpy' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:8:0:
+include/ql_stdlib.h:47:7: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:666:9: warning: pointer targets in passing argument 2 of 'Ql_strncpy' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:8:0:
+include/ql_stdlib.h:47:7: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:667:9: warning: pointer targets in passing argument 2 of 'Ql_strncpy' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:8:0:
+include/ql_stdlib.h:47:7: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:668:9: warning: pointer targets in passing argument 2 of 'Ql_strncpy' differ in signedness [-Wpointer-sign]
+In file included from custom/main.c:8:0:
+include/ql_stdlib.h:47:7: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c: In function 'proc_main_task':
+custom/main.c:704:5: warning: implicit declaration of function 'Ql_IIC_Init' [-Wimplicit-function-declaration]
+custom/main.c:707:5: warning: implicit declaration of function 'Ql_IIC_Config' [-Wimplicit-function-declaration]
+custom/main.c: At top level:
+custom/main.c:826:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+custom/main.c:826:6: warning: conflicting types for 'update_IO' [enabled by default]
+custom/main.c:421:21: note: previous implicit declaration of 'update_IO' was here
+custom/main.c: In function 'update_IO':
+custom/main.c:828:5: warning: implicit declaration of function 'pcf8574_setoutput' [-Wimplicit-function-declaration]
+custom/main.c: At top level:
+custom/main.c:43:24: warning: 'm_myUartPort' defined but not used [-Wunused-variable]
+custom/main.c:124:13: warning: 'ConSMSBuf_IsIntact' declared 'static' but never defined [-Wunused-function]
+custom/main.c:125:13: warning: 'ConSMSBuf_AddSeg' declared 'static' but never defined [-Wunused-function]
+custom/main.c:126:11: warning: 'ConSMSBuf_GetIndex' declared 'static' but never defined [-Wunused-function]

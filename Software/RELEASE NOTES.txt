@@ -1,0 +1,66 @@
+OpenCPU_GS3_SDK_V2.4
+April 22 2019
+bug-fixes and enchancements:
+1.Added SPI API Ql_SPI_WriteRead_Ex().
+2.Added interface£¨Ql_atoll\Ql_strdup\Ql_vsprintf\Ql_rand\Ql_vsnprintf\Ql_srand£©.
+
+
+--------------------------------------------------------------------------------------------------
+OpenCPU_GS3_SDK_V2.2
+February 02 2018
+bug-fixes and enchancements:
+1.Added the parameter QL_UART_TX_BUF_SEND_OUT for Ql_UART_GetOption to check whether the serial data is sent out or not.
+
+--------------------------------------------------------------------------------------------------
+OpenCPU_GS3_SDK_V2.1
+October 16 2017
+1.Added a configuration parameter to select catcher log output from main serial port or debug serial port in open cpu.
+2.Added the API of Ql_GetExceptionRecords to read the abnormal information in NVRAM.
+3.Fixed the bug that URC is returned when using ¡±AT+CREG?/AT+CGREG?¡± to query network status.
+4.Fixed the bug that the module cannot receive special characters during SPP communication.
+5.Fix SMS Data Coding Scheme(DCS) issue.
+---------------------------------------------------------------------------------------------------
+OpenCPU_GS3_SDK_V2.0
+September 21 2016
+
+This release notes cover the important changes information concerning SDK V2.0
+
+---------------------------------------------------------------------------
+bug-fixes and enchancements:
+
+1. Modified the implement of RIL_GetLocation() and RIL_GetLocationByCell() from synchronization mode to asynchronization mode. Developers may refer to ril_location.c and example_location.c for usage.
+
+2. Added new files: ril_sim.h and ril_sim.c, and renamed function name.
+   RIL_NW_GetSIMCardState() --> RIL_SIM_GetSimState()
+   
+   Added RIL APIs£ºRIL_SIM_GetIMSI(), RIL_SIM_GetCCID().
+   
+3. Set the PIN PIN_PCM_OUT as the default GPIO for external watchdog in custom_sys_cfg.c (developers may change according to the real design.)
+
+4. Added RIL API: 
+   RIL_GetIMEI() in ril_system.h/.c.
+   RIL_NW_SetAPN(),RIL_NW_GetIPStatus(),RIL_NW_OpenPDPContext(),RIL_NW_ClosePDPContext(),RIL_NW_GetOperator() in ril_network.h/.c.
+   
+5. Fixed the bug that Ql_GPRS_GetPDPContextId() cannot get the PDP context id after deactivating the PDP by Ql_GPRS_Deactivate().
+
+6. Fixed the bug that -3£¨RIL_AT_BUSY £©is returned when calling Ql_RIL_SendATCmd() in multitasking.
+
+7. Fixed the problem that the alarm for power-up cannot work. Developers may refer to ril_alarm.c and example_alarm.c for usage. (need the core firmware after change time)
+
+8. Enchance audio play:
+   Added support to play audio data as backgroud sound in the state of calling. 
+   Added RIl APIs: API RIL_AUD_PlayMemBg(),RIL_AUD_StopPlayMemBg().
+   
+   Regarding how to play audio resource data, you can refer to the REAMD ME in SDK\tools\AudioFile_Converter directory.
+   
+9. Added API Ql_RIL_AT_GetErrCode() to get the specific error code when Ql_RIL_SendATCmd() failed.
+
+10. Added files ril_dtmf.h, ril_dtmf.c, and the relavant APIs to support sending/detecting WDTMF.
+
+11. Updated documents: ATC document, user guide document and RF layout AN document in SDK\docs directory.
+
+12. Added DTMF RIL interface and example_dtmf.c.
+
+13. Added Example_gps_iic.c.
+ 
+14.Fixed the problem that read the SMS will fail when the new receive SMS time zone is negative.
